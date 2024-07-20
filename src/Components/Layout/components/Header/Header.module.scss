@@ -23,9 +23,12 @@
     height: inherit;
 }
 
+.search, .search-result {
+    width: 500px;
+}
+
 .search {
     position: relative;
-    width: 500px;
     height: 46px;
     padding-left: 16px ;
     display: flex;
@@ -51,6 +54,12 @@
         border-color: var(--search-hover);
     }
 
+}
+
+.search-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 7px 16px;
 }
 
 .clear, .loading {
