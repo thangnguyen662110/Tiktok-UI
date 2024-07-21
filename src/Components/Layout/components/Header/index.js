@@ -11,6 +11,7 @@ import Tippy from "@tippyjs/react/headless";
 import { useEffect, useState } from "react";
 import { Wrapper as PopperWrapper } from "~/Components/Popper";
 import AccountItem from "~/Components/AccountItem";
+import Button from "~/Components/Button";
 
 const cx = classNames.bind(styles);
 
@@ -52,7 +53,18 @@ function Header() {
             </button>
           </div>
         </Tippy>
-        <div className={cx("actions")}></div>
+        <div className={cx("actions")}>
+          <Button primary onClick={() => alert("click")}>
+            Login
+          </Button>
+          <Button outline>Login</Button>
+          <Button
+            upload
+            // iconRight={<FontAwesomeIcon icon={faMagnifyingGlass} />}
+          >
+            Upload
+          </Button>
+        </div>
       </div>
     </header>
   );
